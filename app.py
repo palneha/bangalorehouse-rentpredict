@@ -22,7 +22,7 @@ def predict():
     
 
 
-    return render_template('index.html', prediction_text=' {}'.format(output))
+    return render_template('index.html', prediction_text='House Rent in INR {}'.format(output))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
